@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const HeaderDiv = styled.header`
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 100;
   background: #fff;
-  top: 0;
 `;
 
 export const Nav = styled.nav`
@@ -34,3 +35,4 @@ export const ImgLogin = styled.img`
   position: relative;
   top: -1px;
 `;
+

@@ -4,7 +4,7 @@ import Usuario from "../../Assets/usuario.svg";
 
 import { HeaderDiv, Img, ImgLogin, Nav } from "./HeaderStyle";
 import { Link } from "react-router-dom";
-import { Container } from "../../Rest";
+import { Container } from "../util/Container";
 
 const Header = () => {
   return (

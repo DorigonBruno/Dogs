@@ -1,8 +1,7 @@
 import React from "react";
-import { Container } from "../../util/Container";
 
 const LoginCreate = () => {
-  return <Container>LoginCreate</Container>;
+  return <div>LoginCreate</div>;
 };
 
 export default LoginCreate;

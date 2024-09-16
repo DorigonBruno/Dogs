@@ -6,12 +6,19 @@ import {
   LabelForm,
 } from "./InputStyled";
 
-const Input = ({ label, type, name }) => {
+const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
   return (
     <ContainerInput>
       <LabelForm htmlFor={name}>{label}</LabelForm>
-      <InputForm id={name} name={name} type={type} />
-      <ErrorInput>Error</ErrorInput>
+      <InputForm
+        id={name}
+        name={name}
+        type={type}
+        onChange={onChange}
+        value={value}
+        onBlur={onBlur}
+      />
+      {error && <ErrorInput>{error}</ErrorInput>}
     </ContainerInput>
   );
 };
